@@ -11,7 +11,7 @@ from datetime import datetime
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
 # Gemini 모델 설정
-model = genai.GenerativeModel("gemini-2.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 # ==================================
 # 검색 키워드
