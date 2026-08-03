@@ -47,7 +47,7 @@ def collect_jobs():
         search_url = f"https://www.google.com/search?q={keyword}+채용"
         try:
             response = requests.get(search_url, headers={"User-Agent": "Mozilla/5.0"})
-            result = response.text[:4000]
+            result = response.text[:1000]
             jobs.append(f"검색 키워드: {keyword}\n검색 결과: {result}\n")
         except Exception as e:
             print(f"Error fetching {keyword}: {e}")
